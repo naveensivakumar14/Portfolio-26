@@ -2,7 +2,9 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Particles from "./components/Particles";
+import LogoLoop from "./components/Logoloop";
+
+
 
 // Import AOS library and CSS
 import AOS from "aos";
@@ -12,11 +14,12 @@ AOS.init();
 function App() {
   return (
     <>
-     
-
       <Navbar />
       <Hero />
       <About />
+      <LogoLoop />
+
+     
     </>
   );
 }

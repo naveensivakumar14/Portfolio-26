@@ -19,7 +19,7 @@ const Hero = () => {
        <div className='absolute w-full h-full'>
         <Particles
           particleColors={["#ffffff"]}
-          particleCount={100}
+          particleCount={130}
           particleSpread={10}
           speed={0.3}
           particleBaseSize={100}
