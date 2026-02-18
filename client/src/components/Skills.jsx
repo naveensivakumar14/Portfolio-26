@@ -1,6 +1,7 @@
 import AnimatedContent from "./AnimatedContent";
 
 
+
 import {
   FaHtml5,
   FaCss3Alt,
@@ -23,6 +24,8 @@ import {
   SiNetlify,
 } from "react-icons/si";
 
+
+
 const skills = [
   { name: "HTML5", icon: <FaHtml5 />, color: "#E34F26" },
   { name: "CSS3", icon: <FaCss3Alt />, color: "#1572B6" },
@@ -40,11 +43,12 @@ const skills = [
   { name: "Vite", icon: <SiVite />, color: "#646CFF" },
   { name: "Postman", icon: <SiPostman />, color: "#FF6C37" },
   { name: "Netlify", icon: <SiNetlify />, color: "#00C7B7" },
-]
+];
 
 const Skills = () => {
   return (
-    <section id="skills"
+    <section
+      id="skills"
       className="
       md:py-20 
       bg-[#0f172a]
@@ -53,6 +57,19 @@ const Skills = () => {
       dark:text-white 
       transition-colors duration-300"
     >
+
+        <div className="text-center mb-14">
+            <h2 className="text-4xl md:text-5xl font-bold">
+              My <span className="text-blue-500">Skills</span>
+            </h2>
+            <p className="mt-6 text-sm md:text-lg text-gray-300 dark:text-gray-400 max-w-2xl mx-auto">
+            Technologies I use to craft interative web applications.
+          </p>
+          </div>
+
+
+   
+      {/* //bounce animation for skill cards */}
 
       <AnimatedContent
         distance={100}
@@ -67,16 +84,6 @@ const Skills = () => {
         delay={0}
       >
         <div className="max-w-7xl md:mx-auto px-6">
-      
-          {/* <div className="text-center mb-14">
-            <h2 className="text-4xl md:text-5xl font-bold">
-              My <span className="text-blue-500">Skills</span>
-            </h2>
-            <p className="mt-6 text-sm md:text-lg text-gray-300 dark:text-gray-400 max-w-2xl mx-auto">
-            Technologies and tools I use to craft interative web applications.
-          </p>
-          </div> */}
-
           {/* 4x4 Skill Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-8 gap-8">
             {skills.map((skill, index) => (

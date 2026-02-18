@@ -47,7 +47,7 @@ const LogoLoop = () => {
       <div className="max-w-7xl md:mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl text-white font-bold">
+          <h2 className="text-3xl md:text-5xl text-white font-bold">
             My <span className="text-blue-500">Skills</span>
           </h2>
           {/* <p className="mt-6 text-sm md:text-lg text-gray-300 dark:text-gray-400 max-w-2xl mx-auto">

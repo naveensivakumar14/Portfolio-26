@@ -3,6 +3,11 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import LogoLoop from "./components/Logoloop";
+import Skills from "./components/Skills";
+import Projects from "./components/Project";
+
+
+
 
 
 
@@ -17,7 +22,12 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <LogoLoop />
+      {/* <LogoLoop /> */}
+      <Skills />
+      <Projects />
+
+
+
 
      
     </>
