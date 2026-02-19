@@ -1,70 +1,75 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import AnimatedContent from "./AnimatedContent";
+
+ // Import the project images
+import udemyImage from "../assets/images/Udemy-img.png";
+import actodoImage from "../assets/images/Actodo-slide.jpg";
+import tripadvisorImage from "../assets/images/tripad.jpg";
+import nostraImage from "../assets/images/Nostra-img.jpg";
+import ezcartImage from "../assets/images/productlist-tile.jpg";
+import arunImage from "../assets/images/Arun ice banner.jpg";
+import weatherImage from "../assets/images/Wapp.jpg";
+import fhubImage from "../assets/images/fhub.jpg";
 
 const projects = [
   {
-    title: "MERN E-Commerce",
-    description: "Full-stack e-commerce platform with authentication and payments.",
-    image: "/projects/project1.jpg",
-    preview: "https://your-live-link.com",
+    title: "Udemy Clone",
+    description: "Udemy clone with React, Node.js",
+    image: udemyImage,
+    preview: "https://udemy-react-webpage-bi97vocvn-naveenkumars-projects-90c0c780.vercel.app/",
     github: "https://github.com/yourrepo",
   },
   {
-    title: "Task Manager App",
-    description: "Productivity app with drag-and-drop and real-time updates.",
-    image: "/projects/project2.jpg",
-    preview: "#",
+    title: "Actodo",
+    description: "Task management app with React and Express authentication.",
+    image: actodoImage,
+    preview: "https://actodo-react-mu.vercel.app/",
     github: "#",
   },
   {
-    title: "Portfolio Website",
-    description: "Personal portfolio with animations and modern UI.",
-    image: "/projects/project3.jpg",
-    preview: "#",
+    title: "TripAdvisor",
+    description: "TripAdvisor clone with user reviews and ratings.",
+    image: tripadvisorImage,
+    preview: "https://naveensivakumar14.github.io/Tripadviser-clone/",
     github: "#",
   },
   {
-    title: "Chat Application",
-    description: "Real-time chat app using Socket.io.",
-    image: "/projects/project4.jpg",
-    preview: "#",
+    title: "Nostra",
+    description: "E-commerce platform with responsive design and product showcase.",
+    image: nostraImage,
+    preview: "https://naveensivakumar14.github.io/Nostra-Ecomm/",
     github: "#",
   },
   {
-    title: "Admin Dashboard",
-    description: "Analytics dashboard with charts and role-based access.",
-    image: "/projects/project5.jpg",
-    preview: "#",
+    title: "Product List App",
+    description: "Product listing and shopping cart with React",
+    image: ezcartImage,
+    preview: "https://product-list-app-react-js.vercel.app/ProductList",
     github: "#",
   },
   {
-    title: "Blog Platform",
-    description: "Full-stack blog with rich text editor and authentication.",
-    image: "/projects/project6.jpg",
-    preview: "#",
+    title: "Arun Icecreams",
+    description: "Icecream website with React and Express backend.",
+    image: arunImage,
+    preview: "https://arun-icecream-clone.vercel.app/",
     github: "#",
   },
   {
     title: "Weather App",
     description: "API-based weather app with dynamic UI updates.",
-    image: "/projects/project7.jpg",
-    preview: "#",
+    image: weatherImage,
+    preview: "https://weather-app-react-mu.vercel.app/",
     github: "#",
   },
   {
-    title: "Authentication System",
-    description: "JWT-based secure authentication system.",
-    image: "/projects/project8.jpg",
-    preview: "#",
-    github: "#",
-  },
-  {
-    title: "Landing Page UI",
-    description: "Modern responsive landing page design.",
-    image: "/projects/project9.jpg",
-    preview: "#",
+    title: "Fashion Hub",
+    description: "E-commerce fashion website with React and Express backend.",
+    image: fhubImage,
+    preview: "https://fashionhub-react.vercel.app/",
     github: "#",
   },
 ];
+
 
 const Projects = () => {
   return (
@@ -84,8 +89,21 @@ const Projects = () => {
           </p>
         </div>
 
+
+           <AnimatedContent
+        distance={100}
+        direction="vertical"
+        reverse={false}
+        duration={2}
+        ease="bounce.out"
+        initialOpacity={0}
+        animateOpacity
+        scale={1}
+        threshold={0.1}
+        delay={0}
+      >
         {/* 3x3 Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
           {projects.map((project, index) => (
             <div
@@ -139,6 +157,7 @@ const Projects = () => {
           ))}
 
         </div>
+        </AnimatedContent>
       </div>
     </section>
   );

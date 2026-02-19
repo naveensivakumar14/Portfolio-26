@@ -44,17 +44,7 @@ const logos = [
 const LogoLoop = () => {
   return (
     <section id="skills" className="py-8 bg-[#0f172a]  overflow-hidden">
-      <div className="max-w-7xl md:mx-auto px-6">
-        {/* Heading */}
-        <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-5xl text-white font-bold">
-            My <span className="text-blue-500">Skills</span>
-          </h2>
-          {/* <p className="mt-6 text-sm md:text-lg text-gray-300 dark:text-gray-400 max-w-2xl mx-auto">
-            Technologies and tools I use to craft interative web applications.
-          </p> */}
-        </div>
-      </div>
+     
 
       <div className="relative w-full md:py-10">
         {/* Animated Track */}
